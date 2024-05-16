@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Project 4: Make a Graph</title>
+        <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <script src="./mini-coi.js" scope="./"></script>
+        <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="https://pyscript.net/releases/2024.2.1/core.css">
+      <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <py-config type="json">
+     {"files": {
+      "./project3_flashcards/test.json": "test.json"
+      }}
+  </py-config>
+  </head>
+  <body>
+    <header id="header"></header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('#header').load('../header.html');
+    </script>
+
+    <!-- Your HTML starts here-->
+    <h1>Project 3: Make some Flashcards</h1>
+    <a href="URL for git repo HERE">Link to source code</a>
+    <p> descirbe your project</p>
+
+    <p>File I/O is a little weird for the library I'm using. You will need to add all of the files you are reading from that are *set up ahead of time* to the "py-config" tag in the "head" tag of the html. You will add to the dictionary where the key is the actual location in this project and the value is the way your code will ask for that file.</p>
+
+    <p>The way I've written this, your code won't have any memory actually saved. Once the user refreshes the page, everything starts over again.</p>
+    
+    <p>your code will run here:</p>
+    <script type="py" src="./project3_flashcards/main.py" terminal worker></script>
+    <!-- Your HTML ends here-->
+
+  </body>
+</html>
