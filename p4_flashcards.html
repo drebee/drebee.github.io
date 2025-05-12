@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 4: Flashcards</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.2.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <py-config type="json">
+      {
+        "files": {
+          <!-- Update your files here -->
+          "./flashcards/test.json": "test.json"
+        }
+      }
+    </py-config>
+
+  </head>
+  <body>
+    <!-- Import header from `header.html`-->
+    <header id="header"></header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script type="text/javascript">
+      $('#header').load('./header.html');
+    </script>
+
+    <div class="content">
+    <!-- Your HTML starts here-->
+    <h1>Project 4: Make some Flashcards</h1>
+    <a href="URL for git repo HERE">Link to source code</a>
+    <p> descirbe your project</p>
+
+    <h2>File I/O is a little weird for the python-in-a-website library 
+      I'm using.</h2>
+    <ul>
+      <li>
+      Add your actual flashcards project code into the "flashcards"
+      subdirectory within this repository. (You can copy each file over, or
+      you can use <code>git subtree add -P <prefix> <repo> <rev></code>)</li>
+      <li>If you need any data files to exist <b>before</b> you run your 
+      python code, add the paths to those files into the "py-config" tag 
+      within the "head" tag of this html file. The key is the actual
+      location within this projct and the vlue is the way your python
+      code will ask for the file.</li>
+      <li>The way I've written this, your code won't have any memory actually 
+      saved. Once the user refreshes the page, all the files get overwritten
+      to their original state.</li>
+    </ul>
+    
+    <p>your code will run here:</p>
+    <script type="py" src="./flashcards/main.py" terminal worker></script>
+    <!-- Your HTML ends here-->
+    </div>
+  </body>
+</html>
