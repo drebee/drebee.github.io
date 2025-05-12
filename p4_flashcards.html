@@ -22,7 +22,11 @@
     <header id="header"></header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
     <script type="text/javascript">
-      $('#header').load('./header.html');
+      $(document).ready(function() {
+        $('#header').load('./header.html', function() {
+          $('.content').css("display", "block");
+        })
+      })
     </script>
 
     <div class="content">

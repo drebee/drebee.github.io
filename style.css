@@ -2,6 +2,7 @@
     margin: auto;
     width: 90%;
     max-width: 800px;
+    display: none;
 }
 
 .header {
